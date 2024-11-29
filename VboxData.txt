@@ -1,0 +1,16 @@
+create database VboxData;
+use VboxData;
+create table ITRequest(
+	ReqID int primary key auto_increment,
+    	ReqName varchar(255),
+    	ReqDate date,
+    	ReqEmail varchar(255),
+    	ReqType varchar(255),
+    	ReqDetails varchar(255)
+);
+
+insert into ITRequest values (1, "Nguyen Cong Phuong", "2024-11-23", "cp10@gmail.com","Software", "Install FC Online"); 
+insert into ITRequest values (2, "Nguyen Tuan Anh", "2024-11-12", "ta11@gmail.com","Software", "Update Windows 11");
+insert into ITRequest values (3, "Vu Van Thanh", "2024-10-21", "vt17@gmail.com","Hardware", "Repair PC screen");
+insert into ITRequest values (4, "Luong Xuan Truong", "2024-10-16", "xt06@gmail.com","Hardware", "Replace faulty mouse");
+insert into ITRequest values (5, "Bui Tien Dung", "2024-10-18", "td01@gmail.com","Network", "Optimize network speed");
